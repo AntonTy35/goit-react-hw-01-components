@@ -30,7 +30,3 @@ export const StatItem = styled.li`
   row-gap: 5px;
   text-align: center;
 `;
-
-export const LabelSpan = styled.span``;
-
-export const PercentageSpan = styled.span``;

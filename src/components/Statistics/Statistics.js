@@ -3,8 +3,6 @@ import {
   TitleStatistics,
   StatList,
   StatItem,
-  LabelSpan,
-  PercentageSpan,
 } from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
@@ -14,8 +12,8 @@ export const Statistics = ({ title, stats }) => {
       <StatList>
         {stats.map(({ id, label, percentage }) => (
           <StatItem key={id}>
-            <LabelSpan>{label}</LabelSpan>
-            <PercentageSpan>{percentage}%</PercentageSpan>
+            <span>{label}</span>
+            <span>{percentage}%</span>
           </StatItem>
         ))}
       </StatList>
